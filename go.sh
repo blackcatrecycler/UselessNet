@@ -1,0 +1,1 @@
+watch -n 720 'sh start.sh'
