@@ -10,7 +10,7 @@
 
 ## 环境
 
-* python<3.8
+* python>3.5
 * torch>1.1.0
 * screen
 * ubuntu

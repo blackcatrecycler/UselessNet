@@ -13,8 +13,8 @@ def main():
     model.train()
     optimizer = optim.SGD(model.parameters(), lr=0.001, momentum=0.9)
     criterion = nn.CrossEntropyLoss()
-    t0=time.clock()
-    while time.clock()-t0<args.time:
+    t0=time.perf_counter()
+    while time.perf_counter()-t0<args.time:
         inp = torch.rand(args.batch, 3, 100, 100).cuda()
         tuth = torch.randint(low=0,high=9,size=[args.batch]).cuda()
         optimizer.zero_grad()
